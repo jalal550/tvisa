@@ -30,6 +30,8 @@
 <body>
     <div class="page-wrapper">
 
+
+
         <div class="preloader"></div>
 
         <header class="main-header header-style-one">
@@ -342,69 +344,420 @@
 
 
 
-        <section class="page-title" style="background-image: url(./images/baneer/page-title.jpg);">
+        <section class="page-title" style="background-image: url(./images/baneer/page-title-uk-visa.jpg);">
             <div class="auto-container">
                 <div class="title-outer">
-                    <h1 class="title">About Us</h1>
+                    <h1 class="title">E-VISA Proccessing</h1>
                     <ul class="page-breadcrumb">
                         <li><a href="index.html">Home</a></li>
-                        <li>About Us</li>
+                        <li><a href="#">E-VISA Proccessing</a></li>
+
                     </ul>
                 </div>
             </div>
         </section>
 
+        <style>
+            #msform {
+                text-align: center;
+                position: relative;
+                margin-top: 20px
+            }
 
-        <section class="about-section">
+            #msform fieldset {
+                background: white;
+                border: 0 none;
+                border-radius: 0.5rem;
+                box-sizing: border-box;
+                width: 100%;
+                margin: 0;
+                padding-bottom: 20px;
+                position: relative
+            }
+
+            .form-card {
+                text-align: left
+            }
+
+            #msform fieldset:not(:first-of-type) {
+                display: none
+            }
+
+            #msform input,
+            #msform textarea {
+                padding: 8px 15px 8px 15px;
+                border: 1px solid #ccc;
+                border-radius: 0px;
+                margin-bottom: 25px;
+                margin-top: 2px;
+                width: 100%;
+                box-sizing: border-box;
+                font-family: montserrat;
+                color: #2C3E50;
+                background-color: #ECEFF1;
+                font-size: 16px;
+                letter-spacing: 1px
+            }
+
+            #msform input:focus,
+            #msform textarea:focus {
+                -moz-box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+                border: 1px solid #673AB7;
+                outline-width: 0
+            }
+
+            #msform .action-button {
+                width: 100px;
+                background: #673AB7;
+                font-weight: bold;
+                color: white;
+                border: 0 none;
+                border-radius: 0px;
+                cursor: pointer;
+                padding: 10px 5px;
+                margin: 10px 0px 10px 5px;
+                float: right
+            }
+
+            #msform .action-button:hover,
+            #msform .action-button:focus {
+                background-color: #311B92
+            }
+
+            #msform .action-button-previous {
+                width: 100px;
+                background: #616161;
+                font-weight: bold;
+                color: white;
+                border: 0 none;
+                border-radius: 0px;
+                cursor: pointer;
+                padding: 10px 5px;
+                margin: 10px 5px 10px 0px;
+                float: right
+            }
+
+            #msform .action-button-previous:hover,
+            #msform .action-button-previous:focus {
+                background-color: #000000
+            }
+
+            .card {
+                z-index: 0;
+                border: none;
+                position: relative
+            }
+
+            .fs-title {
+                font-size: 25px;
+                color: #673AB7;
+                margin-bottom: 15px;
+                font-weight: normal;
+                text-align: left
+            }
+
+            .purple-text {
+                color: #673AB7;
+                font-weight: normal
+            }
+
+            .steps {
+                font-size: 25px;
+                color: gray;
+                margin-bottom: 10px;
+                font-weight: normal;
+                text-align: right
+            }
+
+            .fieldlabels {
+                color: gray;
+                text-align: left
+            }
+
+            #progressbar {
+                margin-bottom: 30px;
+                overflow: hidden;
+                color: lightgrey
+            }
+
+            #progressbar .active {
+                color: #673AB7
+            }
+
+            #progressbar li {
+                list-style-type: none;
+                font-size: 15px;
+                text-align: center;
+                width: 33.33%;
+                float: left;
+                position: relative;
+                font-weight: 400
+            }
+
+            #progressbar #account:before {
+                font-family: FontAwesome;
+                content: "1"
+            }
+
+            #progressbar #personal:before {
+                font-family: FontAwesome;
+                content: "2"
+            }
+
+            #progressbar #payment:before {
+                font-family: FontAwesome;
+                content: "3"
+            }
+
+            #progressbar #confirm:before {
+                font-family: FontAwesome;
+                content: "\f00c"
+            }
+
+            #progressbar li:before {
+                width: 50px;
+                height: 50px;
+                line-height: 45px;
+                display: block;
+                font-size: 20px;
+                color: #ffffff;
+                background: lightgray;
+                border-radius: 50%;
+                margin: 0 auto 10px auto;
+                padding: 2px
+            }
+
+            #progressbar li:after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: lightgray;
+                position: absolute;
+                left: 0;
+                top: 25px;
+                z-index: -1
+            }
+
+            #progressbar li.active:before,
+            #progressbar li.active:after {
+                background: #673AB7
+            }
+
+            .progress {
+                height: 20px
+            }
+
+            .progress-bar {
+                background-color: #673AB7
+            }
+
+            .fit-image {
+                width: 100%;
+                object-fit: cover
+            }
+
+            .order-summary {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+        </style>
+        <section class="e-visa-section-three mt-5">
+
             <div class="auto-container">
-                <div class="row">
-                    <div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight"
-                        data-wow-delay="600ms">
-                        <div class="inner-column">
-                            <div class="sec-title">
-                                <span class="sub-title">About our company</span>
-                                <h2>Immigration Services From Experienced Lawyers.</h2>
-                                <h4>Visa & Immigration Consultant Agency.</h4>
-                                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                                    quibusdam quidem impedit,
-                                    odio possimus harum porro nemo iure exercitationem accusamus! Lorem ipsum dolor sit
-                                    amet consectetur, adipisicing elit. Vel, aliquam.</div>
-                            </div>
-                            <div class="row">
-                                <div class="about-block col-lg-6 col-md-6">
-                                    <div class="inner">
-                                        <i class="icon flaticon-worldwide"></i>
-                                        <h5 class="title">Best Immigration<br> Resources</h5>
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h2 id="heading" class="text-center">E-VISA APPLICATION FORM</h2>
+                        <p class="text-center">Fill all form field to go to next step</p>
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                            <li class="active" id="account"><strong>Order Information</strong></li>
+                            <li id="personal"><strong>Payments</strong></li>
+                            <li id="payment"><strong>Documents Upload</strong></li>
+                            <!-- <li id="confirm"><strong>Finish</strong></li> -->
+                        </ul>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> <br> <!-- fieldsets -->
+                    </div>
+                    <div class="col-md-8 text-center p-0 mt-3 mb-2">
+                        <div class="card px-0 pt-4 pb-0 mt-3 mb-3 mx-3">
+
+                            <form id="msform">
+
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h2 class="fs-title">Account Information & Travel Details:</h2>
+                                            </div>
+                                            <div class="col-5">
+                                                <h2 class="steps">Step 1 - 3</h2>
+                                            </div>
+                                        </div>
+
+
+
+                                        <!-- New Travel Details Fields -->
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="country">Traveling to</label>
+                                                    <select id="country" class="form-control" required>
+                                                        <option value="">Select Country</option>
+                                                        <!-- Add country options here -->
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="stayTime">Staying Time</label>
+                                                    <input type="text" id="stayTime" class="form-control"
+                                                        placeholder="MM/DD/YYYY - MM/DD/YYYY" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="email">Email Address</label>
+                                                    <input type="email" id="email" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="phone">Phone Number</label>
+                                                    <input type="tel" id="phone" class="form-control"
+                                                        placeholder="+8801234567890" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="communication">Communication Channel (optional)</label>
+                                                    <select id="communication" class="form-control">
+                                                        <option value="">Select Communication Channel</option>
+                                                        <option value="email">Email</option>
+                                                        <option value="sms">SMS</option>
+                                                        <option value="whatsapp">WhatsApp</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="about-block col-lg-6 col-md-6">
-                                    <div class="inner">
-                                        <i class="icon flaticon-passport-16"></i>
-                                        <h5 class="title">Return Visas <br>Availabile</h5>
+
+                                    <input type="button" name="next" class="next action-button" value="Next" />
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h2 class="fs-title">Payment Information:</h2>
+                                            </div>
+                                            <div class="col-5">
+                                                <h2 class="steps">Step 2 - 3</h2>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="cardNumber">Card Number</label>
+                                                        <input type="text" class="form-control" id="cardNumber"
+                                                            placeholder="Enter your card number" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="cardExpiry">Expiry Date</label>
+                                                        <input type="text" class="form-control" id="cardExpiry"
+                                                            placeholder="MM/YY" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="cardCVV">CVV</label>
+                                                        <input type="text" class="form-control" id="cardCVV"
+                                                            placeholder="Enter CVV" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="cardHolderName">Cardholder Name</label>
+                                                        <input type="text" class="form-control" id="cardHolderName"
+                                                            placeholder="Enter cardholder name" required>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <input type="button" name="next" class="next action-button" value="Next" />
+                                        <input type="button" name="previous" class="previous action-button-previous"
+                                            value="Previous" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h2 class="fs-title">Image Upload:</h2>
+                                            </div>
+                                            <div class="col-5">
+                                                <h2 class="steps">Step 3 - 3</h2>
+                                            </div>
+                                        </div> <label class="fieldlabels">Upload Your Photo:</label> <input type="file"
+                                            name="pic" accept="image/*"> <label class="fieldlabels">Upload Documents
+                                            Photo:</label> <input type="file" name="pic" accept="image/*">
+                                    </div> <input type="button" name="next" class="next action-button" value="Submit" />
+                                    <input type="button" name="previous" class="previous action-button-previous"
+                                        value="Previous" />
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-card">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h2 class="fs-title">Finish:</h2>
+                                            </div>
+
+                                        </div> <br><br>
+                                        <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png"
+                                                    class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="btm-box">
-                                <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Explore
-                                        now</span></a>
-                            </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
 
-                    <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
-                        <div class="inner-column wow fadeInLeft">
-                            <figure class="image-1 overlay-anim wow fadeInUp"><img src="images/about-1.jpg" alt="">
-                            </figure>
-                            <figure class="image-2 overlay-anim wow fadeInRight"><img src="images/about-2.jpg" alt="">
-                            </figure>
-                            <figure class="image-3 overlay-anim wow fadeInLeft"><img src="images/about-3.jpg" alt="">
-                            </figure>
-                            <figure class="stemp"><img src="images/stemp.png" alt=""></figure>
-                            <div class="experience bounce-y">
-                                <div class="inner">
-                                    <i class="icon flaticon-increase"></i>
-                                    <div class="text"><strong>36k+</strong> Work Experience</div>
-                                </div>
+                    <div class="col-md-4">
+                        <div class="order-summary">
+                            <h4>Order Summary</h4>
+                            <p><strong>Traveling to:</strong> <span id="summaryCountry">---</span></p>
+                            <p><strong>Staying Time:</strong> <span id="summaryStayTime">---</span></p>
+                            <p><strong>Visa Fee:</strong> $0.00</p>
+                            <p><strong>Total Service Fees:</strong> $0.00</p>
+                            <div class="form-group">
+                                <label for="promoCode">Have a promotion code?</label>
+                                <input type="text" id="promoCode" class="form-control">
+                                <button type="button" id="applyPromo" class="btn btn-secondary mt-2">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -412,217 +765,107 @@
             </div>
         </section>
 
+        <style>
+            .cont-info {
+                display: flex;
+                justify-content: start;
+            }
+            .cont-info p{
+                font-size: 25px;
+                font-weight: 600;
+            }
+
+            .cont-info span {
+                font-size: 25px;
+                color: var(--theme-color2);
+                margin-right: 10px;
+            }
+
+            .checklist-item {
+                display: flex;
+                align-items: center;
+            }
+
+            .checklist-item:before {
+                content: '✔️';
+                margin-right: 10px;
+                color: green;
+            }
+        </style>
 
 
+        <section class="visa-with-tivsa-section py-5">
 
-        <section class="process-section-two pt-0">
-            <div class="anim-icons full-width">
-                <span class="icon icon-cards"></span>
-                <span class="icon icon-object-1"></span>
-            </div>
             <div class="auto-container">
-                <div class="sec-title text-center">
-                    <span class="sub-title">Our work process</span>
-                    <h2>Get your Visa Approved in <br>4 Simple Steps.</h2>
-                </div>
+
                 <div class="row">
+                    <div class="col-md-10">
+                        <h3>Important note for applicants</h3>
 
-                    <div class="process-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated"
-                        style="visibility: visible; animation-name: fadeInUp;">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <i class="icon flaticon-interview-1"></i>
-                                <span class="count">01</span>
-                            </div>
-                            <div class="info-box">
-                                <h5 class="title">Interview</h5>
-                                <div class="text">Lorem Ipsum is simply dummy text of the new des printng and type.
-                                </div>
-                            </div>
-                        </div>
+                        <ul>
+                            <li><i class="ri-checkbox-circle-fill text-success"></i> Please make sure your passport is
+                                valid for at least 6 months from the date of arrival at the destination.</li>
+                            <li><i class="ri-checkbox-circle-fill text-success"></i> Your passport should have two blank
+                                pages for stamping by the Immigration Officer.</li>
+                            <li><i class="ri-checkbox-circle-fill text-success"></i> The information you give on the
+                                form has to be identical to your passport to avoid any delay in your visa.</li>
+                            <li><i class="ri-checkbox-circle-fill text-success"></i> After you receive the visa in your
+                                mailbox, please check carefully the duration of stay you are allowed. It helps you avoid
+                                unexpected troubles or penalties.</li>
+                            <li><i class="ri-checkbox-circle-fill text-success"></i> It is advisable to bring a printout
+                                of your visa along with your valid passport upon arrival.</li>
+                            <li><i class="ri-checkbox-circle-fill text-success"></i> We would like to mention that you
+                                can apply independently through the government website, which may help you save on
+                                expenses.</li>
+                        </ul>
+
                     </div>
 
-                    <div class="process-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated"
-                        data-wow-delay="400ms"
-                        style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <i class="icon flaticon-form"></i>
-                                <span class="count">02</span>
-                            </div>
-                            <div class="info-box">
-                                <h5 class="title">Fill Form</h5>
-                                <div class="text">Lorem Ipsum is simply dummy text of the new des printng and type.
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-12 mt-5">
+                        <h3>Disclaimer</h3>
+                        <p>Tvisa, operated by Ci study Bangladesh. Ltd., is an independent party not associated with any
+                            governmental organization. We are not a law firm, and this website does not offer legal
+                            advice, explanations, opinions, or recommendations regarding legal rights. We focus on
+                            providing online solutions for travel matters. To apply for an eVisa under our processing
+                            and assistance, you will pay for government and service fees, so the total will be higher
+                            than applying directly with the authorities yourself. All our fee information is transparent
+                            at each step in the application process.</p>
                     </div>
 
-                    <div class="process-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated"
-                        data-wow-delay="800ms"
-                        style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <i class="icon flaticon-documents"></i>
-                                <span class="count">03</span>
-                            </div>
-                            <div class="info-box">
-                                <h5 class="title">Documentation</h5>
-                                <div class="text">Lorem Ipsum is simply dummy text of the new des printng and type.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="process-block-two col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp animated"
-                        data-wow-delay="1200ms"
-                        style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                                <i class="icon flaticon-visa-3"></i>
-                                <span class="count">04</span>
-                            </div>
-                            <div class="info-box">
-                                <h5 class="title">Get Visa</h5>
-                                <div class="text">Lorem Ipsum is simply dummy text of the new des printng and type.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="countries-section">
-            <div class="auto-container">
-                <div class="bg-layer"></div>
-                <div class="sec-title text-center light">
-                    <span class="sub-title">Countries we offer</span>
-                    <h2>Countries We Support <br>for Immigration.</h2>
-                </div>
-                <div class="carousel-outer">
 
-                    <div class="countries-carousel owl-carousel owl-theme">
-
-                        <div class="country-block">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="images/resource/country-1.jpg"
-                                            class="lightbox-image"><img src="images/country-1.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="flag"><img src="images/flag-aus.jpg" alt=""></div>
-                                    <h5 class="title"><a href="#">Australia</a></h5>
-                                    <div class="text">Fusce pretium sem ism the eget mattis.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="country-block">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="images/resource/country-2.jpg"
-                                            class="lightbox-image"><img src="images/country-2.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="flag"><img src="images/flag-usa.jpg" alt=""></div>
-                                    <h5 class="title"><a href="#">United States</a></h5>
-                                    <div class="text">Fusce pretium sem ism the eget mattis.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="country-block">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="images/resource/country-3.jpg"
-                                            class="lightbox-image"><img src="images/country-3.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="flag"><img src="images/flag-dub.jpg" alt=""></div>
-                                    <h5 class="title"><a href="#">Dubai</a></h5>
-                                    <div class="text">Fusce pretium sem ism the eget mattis.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="country-block">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="images/resource/country-4.jpg"
-                                            class="lightbox-image"><img src="images/country-4.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="flag"><img src="images/canada.png" alt=""></div>
-                                    <h5 class="title"><a href="#">Canada</a></h5>
-                                    <div class="text">Fusce pretium sem ism the eget mattis.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="country-block">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><a href="images/resource/country-5.jpg"
-                                            class="lightbox-image"><img src="images/country-5.jpg" alt=""></a></figure>
-                                </div>
-                                <div class="content-box">
-                                    <div class="flag"><img src="images/uk.png" alt=""></div>
-                                    <h5 class="title"><a href="#">United Kingdom</a></h5>
-                                    <div class="text">Fusce pretium sem ism the eget mattis.</div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row ">
+                    <div class="col-md-7">
+                        <h3>Tvisa 24/7 Support</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut voluptates nobis
+                            inventore quidem consectetur ullam voluptatibus sequi laboriosam tempora. Nemo doloribus
+                            unde facere excepturi aperiam voluptatibus nisi, dignissimos incidunt!</p>
+                            
                     </div>
+                    <div class="col-md-5">
+                        <h5>Contact Information</h5>
+                <div class="cont-info">
+                    <span><i class="ri-phone-fill"></i></span>
+                    <p>+84577846845</p>
+                </div>
+                <div class="cont-info">
+                    <span><i class="ri-mail-send-fill"></i></span>
+                    <p>ukvisit080@gmail.com</p>
+                </div>
+                <div class="cont-info">
+                    <span><i class="ri-map-pin-fill"></i></span>
+                    <p>A & A Tower, 173 Inner Circular road,<br>Dhaka, Bangladesh, 1000</p>
+                </div>
+                    </div>
+                    
+
+
+
                 </div>
             </div>
         </section>
 
 
-        <section class="why-choose-us">
-            <div class="auto-container">
-                <div class="row">
-
-                    <div class="content-column col-xl-6 col-lg-12 col-md-12">
-                        <div class="inner-column wow fadeInRight">
-                            <div class="sec-title">
-                                <i class="sub-title">Our benefits</i>
-                                <h2>Few Reasons to Choose Our Company.</h2>
-                                <div class="text">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
-                                    sollicitudin, lorem is simply free text quis bibendum.</div>
-                            </div>
-                            <div class="info-box">
-                                <i class="icon flaticon-job-interview"></i>
-                                <span class="sub-title">Benefit 01</span>
-                                <h4 class="title">Direct Online Interviews</h4>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                            <div class="info-box">
-                                <i class="icon flaticon-approved-1"></i>
-                                <span class="sub-title">Benefit 02</span>
-                                <h4 class="title">Quick &amp; Easy Process</h4>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                            <div class="info-box">
-                                <i class="icon flaticon-passport-16"></i>
-                                <span class="sub-title">Benefit 03</span>
-                                <h4 class="title">99% Visa Approvals</h4>
-                                <a href="#" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="image-column col-xl-6 col-lg-12 col-md-12">
-                        <div class="inner-column wow fadeInLeft">
-                            <div class="image-box">
-                                <figure class="plane"><img src="images/icon-plane.png" alt=""></figure>
-                                <figure class="image"><img src="images/f-model.png" alt=""></figure>
-                                <figure class="stemp"><img src="images/stemp-2.png" alt=""></figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <footer class="main-footer">
             <div class="auto-container">
@@ -749,6 +992,7 @@
 
     </div>
 
+
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
     <script data-cfasync="false" src="js/email-decode.min.js"></script>
     <script src="js/jquery.js"></script>
@@ -775,31 +1019,83 @@
     <script src="js/owl.js"></script>
     <script src="js/script.js"></script>
     <script>
-        (function ($) {
-            $("#contact_form").validate({
-                submitHandler: function (form) {
-                    var form_btn = $(form).find('button[type="submit"]');
-                    var form_result_div = '#form-result';
-                    $(form_result_div).remove();
-                    form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
-                    var form_btn_old_msg = form_btn.html();
-                    form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
-                    $(form).ajaxSubmit({
-                        dataType: 'json',
-                        success: function (data) {
-                            if (data.status == 'true') {
-                                $(form).find('.form-control').val('');
-                            }
-                            form_btn.prop('disabled', false).html(form_btn_old_msg);
-                            $(form_result_div).html(data.message).fadeIn('slow');
-                            setTimeout(function () { $(form_result_div).fadeOut('slow') }, 6000);
-                        }
-                    });
-                }
-            });
-        })(jQuery);
-    </script>
+        $(document).ready(function () {
 
+            var current_fs, next_fs, previous_fs; //fieldsets
+            var opacity;
+            var current = 1;
+            var steps = $("fieldset").length;
+
+            setProgressBar(current);
+
+            $(".next").click(function () {
+
+                current_fs = $(this).parent();
+                next_fs = $(this).parent().next();
+
+                //Add Class Active
+                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+                //show the next fieldset
+                next_fs.show();
+                //hide the current fieldset with style
+                current_fs.animate({ opacity: 0 }, {
+                    step: function (now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({ 'opacity': opacity });
+                    },
+                    duration: 500
+                });
+                setProgressBar(++current);
+            });
+
+            $(".previous").click(function () {
+
+                current_fs = $(this).parent();
+                previous_fs = $(this).parent().prev();
+
+                //Remove class active
+                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+                //show the previous fieldset
+                previous_fs.show();
+
+                //hide the current fieldset with style
+                current_fs.animate({ opacity: 0 }, {
+                    step: function (now) {
+                        // for making fielset appear animation
+                        opacity = 1 - now;
+
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        previous_fs.css({ 'opacity': opacity });
+                    },
+                    duration: 500
+                });
+                setProgressBar(--current);
+            });
+
+            function setProgressBar(curStep) {
+                var percent = parseFloat(100 / steps) * curStep;
+                percent = percent.toFixed();
+                $(".progress-bar")
+                    .css("width", percent + "%")
+            }
+
+            $(".submit").click(function () {
+                return false;
+            })
+
+        });
+    </script>
 </body>
 
 </html>

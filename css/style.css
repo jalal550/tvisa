@@ -4001,7 +4001,12 @@ Section Title
 ***/
 .about-section-three {
   position: relative;
-  padding: 120px 0 70px;
+  padding: 60px 0 30px;
+}
+
+.refusal-details-section {
+  position: relative;
+  padding: 60px 0 30px;
 }
 .about-section-three .icon-object-1 {
   right: -320px;
@@ -7351,7 +7356,7 @@ Section Title
 }
 .accordion-box .block .acc-content .content {
   position: relative;
-  padding: 10px 20px 20px;
+  padding: 40px 20px 20px;
 }
 .accordion-box .block .acc-content .content .text {
   display: block;
